@@ -73,6 +73,7 @@ let g:coc_global_extensions = [
 \   'coc-docker',
 \   'coc-pairs'
 \]
+inoremap <expr> <CR> pumvisible() ? coc#_select_confirm() : "\<CR>"
 
 autocmd FileType c,cpp setlocal ts=2 sts=2 sw=2 expandtab
 autocmd FileType java setlocal ts=4 sts=4 sw=4 expandtab
